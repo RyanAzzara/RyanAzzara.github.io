@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ryan Azzara | Portfolio</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #e2e8f0, #ffffff);
+    }
+
+    .hero-content {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      color: #475569;
+      margin-bottom: 15px;
+    }
+
+    .statement {
+      font-size: 21px;
+      max-width: 800px;
+      margin-bottom: 25px;
+      color: #334155;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0f172a;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background-color: #334155;
+    }
+
+    section {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 0;
+    }
+
+    section h2 {
+      font-size: 32px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .section-description {
+      color: #64748b;
+      margin-bottom: 25px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .skill {
+      background-color: white;
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .project {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .project h3 {
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #475569;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #e2e8f0;
+      color: #334155;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 3px;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    @media (max-width: 650px) {
+
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .statement {
+        font-size: 18px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+
+      <h2>Ryan Azzara</h2>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- PERSONAL STATEMENT -->
+
+    <section class="hero" id="about">
+
+      <div class="hero-content">
+
+        <h3>Supply Chain Management Student</h3>
+
+        <h1>Ryan Azzara</h1>
+
+        <p class="statement">
+          I am a Rutgers Business School Supply Chain Management student
+          interested in procurement, sourcing, logistics, supplier management,
+          and using data to improve business operations.
+        </p>
+
+        <a class="button" href="#projects">
+          View My Projects
+        </a>
+
+        <a class="button"
+           href="https://github.com/RyanAzzara"
+           target="_blank">
+
+          GitHub Profile
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+      <h2>Skills</h2>
+
+      <p class="section-description">
+        Skills I have developed through coursework, projects, and work experience.
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill">Microsoft Excel</div>
+
+        <div class="skill">Supply Chain Analysis</div>
+
+        <div class="skill">Procurement & Sourcing</div>
+
+        <div class="skill">Supplier Management</div>
+
+        <div class="skill">Logistics</div>
+
+        <div class="skill">Data Analysis</div>
+
+        <div class="skill">SQL & Database Concepts</div>
+
+        <div class="skill">HTML / CSS / JavaScript</div>
+
+        <div class="skill">Communication</div>
+
+        <div class="skill">Teamwork</div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+      <h2>Projects</h2>
+
+      <p class="section-description">
+        Selected projects that demonstrate my business, analytical,
+        and technical skills.
+      </p>
+
+      <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project">
+
+          <h3>Northeast Regional Epilepsy Group Analysis</h3>
+
+          <p>
+            Completed an internal business analysis project focused on
+            evaluating organizational challenges and developing recommendations
+            using management and business concepts.
+          </p>
+
+          <span class="tag">Business Analysis</span>
+
+          <span class="tag">Teamwork</span>
+
+          <span class="tag">Presentation</span>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project">
+
+          <h3>Supply Chain & Procurement Analysis</h3>
+
+          <p>
+            Applied sourcing, supplier selection, negotiation, purchasing,
+            inventory, and supply management concepts to business cases
+            through Rutgers Supply Chain Management coursework.
+          </p>
+
+          <span class="tag">Procurement</span>
+
+          <span class="tag">Sourcing</span>
+
+          <span class="tag">Supply Chain</span>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project">
+
+          <h3>Goldman Sachs Internal Audit Simulation</h3>
+
+          <p>
+            Completed a virtual job simulation involving internal audit,
+            risk identification, anti-money-laundering controls, and
+            evaluating business processes.
+          </p>
+
+          <span class="tag">Risk Analysis</span>
+
+          <span class="tag">Internal Audit</span>
+
+          <span class="tag">Problem Solving</span>
+
+          <p>
+            <a href="https://www.theforage.com/"
+               target="_blank">
+               View Forage
+            </a>
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      © 2026 Ryan Azzara |
+      <a href="https://github.com/RyanAzzara"
+         target="_blank">
+         GitHub
+      </a>
+    </p>
+
+  </footer>
+
+
+</body>
+</html>
