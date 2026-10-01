@@ -11,12 +11,7 @@
 
   <title>Ryan Azzara | Portfolio</title>
 
-
   <style>
-
-    /* -------------------- */
-    /* GENERAL PAGE STYLING */
-    /* -------------------- */
 
     * {
       box-sizing: border-box;
@@ -35,29 +30,19 @@
       line-height: 1.6;
     }
 
-
-
-    /* -------------------- */
-    /* NAVIGATION BAR       */
-    /* -------------------- */
-
     header {
       background-color: #0f172a;
       color: white;
       padding: 18px 0;
-
       position: sticky;
       top: 0;
-
       z-index: 1000;
     }
 
     nav {
       width: 90%;
       max-width: 1100px;
-
       margin: auto;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -69,17 +54,13 @@
 
     nav ul {
       list-style: none;
-
       display: flex;
-
       gap: 25px;
     }
 
     nav a {
       color: white;
-
       text-decoration: none;
-
       font-weight: bold;
     }
 
@@ -87,519 +68,241 @@
       text-decoration: underline;
     }
 
-
-
-    /* -------------------- */
-    /* HERO / ABOUT SECTION */
-    /* -------------------- */
-
     .hero {
-
       min-height: 75vh;
-
       display: flex;
       align-items: center;
-
-      background: linear-gradient(
-        135deg,
-        #e2e8f0,
-        #ffffff
-      );
-
+      background: linear-gradient(135deg, #e2e8f0, #ffffff);
     }
-
 
     .hero-content {
-
       width: 90%;
-
       max-width: 1100px;
-
       margin: auto;
-
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 60px;
-
     }
-
 
     .hero-text {
-
       flex: 1;
-
     }
-
 
     .hero-text h3 {
-
       color: #475569;
-
       font-size: 20px;
-
       margin-bottom: 10px;
-
     }
-
 
     .hero-text h1 {
-
       font-size: 60px;
-
       color: #0f172a;
-
       margin-bottom: 15px;
-
     }
-
 
     .statement {
-
       font-size: 21px;
-
       max-width: 720px;
-
       color: #334155;
-
       margin-bottom: 25px;
-
     }
-
-
-
-    /* -------------------- */
-    /* BUTTONS              */
-    /* -------------------- */
 
     .button {
-
       display: inline-block;
-
       background-color: #0f172a;
-
       color: white;
-
       padding: 12px 20px;
-
       text-decoration: none;
-
       border-radius: 8px;
-
       font-weight: bold;
-
       margin-right: 10px;
-
       margin-top: 8px;
-
       transition: 0.2s;
-
     }
-
 
     .button:hover {
-
       background-color: #334155;
-
       transform: translateY(-2px);
-
     }
-
-
-
-    /* -------------------- */
-    /* HEADSHOT             */
-    /* -------------------- */
 
     .hero-photo {
-
       flex-shrink: 0;
-
     }
-
 
     .hero-photo img {
-
       width: 330px;
-
       height: 410px;
-
       object-fit: cover;
-
       object-position: center top;
-
       border-radius: 18px;
-
       border: 4px solid white;
-
-      box-shadow:
-        0 15px 35px rgba(15, 23, 42, 0.20);
-
+      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.20);
     }
-
-
-
-    /* -------------------- */
-    /* PAGE SECTIONS        */
-    /* -------------------- */
 
     section {
-
       width: 90%;
-
       max-width: 1100px;
-
       margin: auto;
-
       padding: 70px 0;
-
     }
-
 
     section h2 {
-
       font-size: 34px;
-
       color: #0f172a;
-
       margin-bottom: 10px;
-
     }
-
 
     .section-description {
-
       color: #64748b;
-
       margin-bottom: 25px;
-
       max-width: 750px;
-
     }
-
-
-
-    /* -------------------- */
-    /* SKILLS SECTION       */
-    /* -------------------- */
 
     .skills-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(180px, 1fr));
-
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 15px;
-
     }
-
 
     .skill {
-
       background-color: white;
-
       padding: 18px;
-
       border-radius: 10px;
-
       border: 1px solid #e2e8f0;
-
       text-align: center;
-
       font-weight: bold;
-
-      box-shadow:
-        0 4px 12px rgba(15, 23, 42, 0.05);
-
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
       transition: 0.2s;
-
     }
-
 
     .skill:hover {
-
       transform: translateY(-3px);
-
-      box-shadow:
-        0 8px 18px rgba(15, 23, 42, 0.10);
-
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.10);
     }
-
-
-
-    /* -------------------- */
-    /* PROJECT SECTION      */
-    /* -------------------- */
 
     .projects-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 22px;
-
     }
-
 
     .project {
-
       background-color: white;
-
       padding: 25px;
-
       border-radius: 12px;
-
       border: 1px solid #e2e8f0;
-
-      box-shadow:
-        0 5px 16px rgba(15, 23, 42, 0.06);
-
+      box-shadow: 0 5px 16px rgba(15, 23, 42, 0.06);
       transition: 0.2s;
-
     }
-
 
     .project:hover {
-
       transform: translateY(-4px);
-
-      box-shadow:
-        0 10px 25px rgba(15, 23, 42, 0.10);
-
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.10);
     }
-
 
     .project h3 {
-
       color: #0f172a;
-
       margin-bottom: 10px;
-
     }
-
 
     .project p {
-
       color: #475569;
-
       margin-bottom: 15px;
-
     }
-
-
-
-    /* -------------------- */
-    /* PROJECT TAGS         */
-    /* -------------------- */
 
     .tag {
-
       display: inline-block;
-
       background-color: #e2e8f0;
-
       color: #334155;
-
       padding: 5px 10px;
-
       border-radius: 20px;
-
       font-size: 13px;
-
       margin: 3px;
-
     }
-
-
-
-    /* -------------------- */
-    /* PROJECT LINKS        */
-    /* -------------------- */
 
     .project-link {
-
       display: inline-block;
-
       margin-top: 16px;
-
       color: #0f172a;
-
       font-weight: bold;
-
       text-decoration: none;
-
     }
-
 
     .project-link:hover {
-
       text-decoration: underline;
-
     }
-
-
-
-    /* -------------------- */
-    /* FOOTER               */
-    /* -------------------- */
 
     footer {
-
       background-color: #0f172a;
-
       color: white;
-
       text-align: center;
-
       padding: 30px;
-
       margin-top: 40px;
-
     }
-
 
     footer a {
-
       color: white;
-
       text-decoration: none;
-
       font-weight: bold;
-
     }
-
 
     footer a:hover {
-
       text-decoration: underline;
-
     }
-
-
-
-    /* -------------------- */
-    /* MOBILE DESIGN        */
-    /* -------------------- */
 
     @media (max-width: 800px) {
 
-
       .hero-content {
-
         flex-direction: column-reverse;
-
         text-align: center;
-
         padding: 50px 0;
-
       }
-
 
       .hero-text h1 {
-
         font-size: 44px;
-
       }
-
 
       .statement {
-
         font-size: 18px;
-
       }
-
 
       .hero-photo img {
-
         width: 250px;
-
         height: 310px;
-
       }
-
 
       nav {
-
         flex-direction: column;
-
         gap: 12px;
-
       }
-
 
       nav ul {
-
         gap: 16px;
-
       }
-
 
       .button {
-
         margin-right: 5px;
-
         margin-left: 5px;
-
       }
-
     }
 
   </style>
 
 </head>
 
-
-
 <body>
-
-
-  <!-- ================================= -->
-  <!-- NAVIGATION                        -->
-  <!-- ================================= -->
 
   <header>
 
     <nav>
 
-      <h2>
-        Ryan Azzara
-      </h2>
-
+      <h2>Ryan Azzara</h2>
 
       <ul>
-
-        <li>
-
-          <a href="#about">
-            About
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#skills">
-            Skills
-          </a>
-
-        </li>
-
-
-        <li>
-
-          <a href="#projects">
-            Projects
-          </a>
-
-        </li>
-
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
 
     </nav>
@@ -607,68 +310,34 @@
   </header>
 
 
-
   <main>
 
 
+    <!-- ABOUT -->
 
-    <!-- ================================= -->
-    <!-- ABOUT / PERSONAL STATEMENT        -->
-    <!-- ================================= -->
-
-    <section
-      class="hero"
-      id="about"
-    >
-
+    <section class="hero" id="about">
 
       <div class="hero-content">
 
 
-
-        <!-- LEFT SIDE -->
-
         <div class="hero-text">
 
+          <h3>Rutgers Business School</h3>
 
-          <h3>
-
-            Rutgers Business School
-
-          </h3>
-
-
-          <h1>
-
-            Ryan Azzara
-
-          </h1>
-
+          <h1>Ryan Azzara</h1>
 
           <p class="statement">
-
             I am a Rutgers Business School Supply Chain Management student
             interested in procurement, sourcing, logistics, supplier management,
             and using data to improve business operations.
-
           </p>
-
-
-
-          <!-- VIEW PROJECTS BUTTON -->
 
           <a
             class="button"
             href="#projects"
           >
-
             View My Projects
-
           </a>
-
-
-
-          <!-- GITHUB BUTTON -->
 
           <a
             class="button"
@@ -676,14 +345,8 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-
             GitHub Profile
-
           </a>
-
-
-
-          <!-- LINKEDIN BUTTON -->
 
           <a
             class="button"
@@ -691,362 +354,196 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-
             LinkedIn Profile
-
           </a>
-
 
         </div>
 
 
-
-        <!-- RIGHT SIDE HEADSHOT -->
-
         <div class="hero-photo">
-
 
           <img
             src="Headshot.png"
             alt="Ryan Azzara professional headshot"
           >
 
-
         </div>
 
 
       </div>
 
-
     </section>
 
 
 
-
-    <!-- ================================= -->
-    <!-- SKILLS                            -->
-    <!-- ================================= -->
+    <!-- SKILLS -->
 
     <section id="skills">
 
-
-      <h2>
-
-        Skills
-
-      </h2>
-
+      <h2>Skills</h2>
 
       <p class="section-description">
-
         Skills I have developed through my Rutgers Business School coursework,
         academic projects, and professional experience.
-
       </p>
-
-
 
       <div class="skills-grid">
 
+        <div class="skill">Microsoft Excel</div>
 
-        <div class="skill">
+        <div class="skill">Supply Chain Analysis</div>
 
-          Microsoft Excel
+        <div class="skill">Procurement & Sourcing</div>
 
-        </div>
+        <div class="skill">Supplier Management</div>
 
+        <div class="skill">Logistics</div>
 
-        <div class="skill">
+        <div class="skill">Data Analysis</div>
 
-          Supply Chain Analysis
+        <div class="skill">SQL & Database Concepts</div>
 
-        </div>
+        <div class="skill">HTML / CSS / JavaScript</div>
 
+        <div class="skill">Communication</div>
 
-        <div class="skill">
-
-          Procurement & Sourcing
-
-        </div>
-
-
-        <div class="skill">
-
-          Supplier Management
-
-        </div>
-
-
-        <div class="skill">
-
-          Logistics
-
-        </div>
-
-
-        <div class="skill">
-
-          Data Analysis
-
-        </div>
-
-
-        <div class="skill">
-
-          SQL & Database Concepts
-
-        </div>
-
-
-        <div class="skill">
-
-          HTML / CSS / JavaScript
-
-        </div>
-
-
-        <div class="skill">
-
-          Communication
-
-        </div>
-
-
-        <div class="skill">
-
-          Teamwork
-
-        </div>
-
+        <div class="skill">Teamwork</div>
 
       </div>
-
 
     </section>
 
 
 
-
-    <!-- ================================= -->
-    <!-- PROJECTS                          -->
-    <!-- ================================= -->
+    <!-- PROJECTS -->
 
     <section id="projects">
 
-
-      <h2>
-
-        Projects
-
-      </h2>
-
+      <h2>Projects</h2>
 
       <p class="section-description">
-
-        Selected academic and professional projects that demonstrate
-        my business, analytical, communication, and technical skills.
-
+        Selected academic and professional projects that demonstrate my business,
+        analytical, communication, and technical skills.
       </p>
-
-
 
       <div class="projects-grid">
 
 
-
-
-        <!-- ================================= -->
-        <!-- PROJECT 1                         -->
-        <!-- ================================= -->
+        <!-- PROJECT 1 -->
 
         <div class="project">
 
-
           <h3>
-
             Northeast Regional Epilepsy Group Analysis
-
           </h3>
 
-
           <p>
-
-            Worked as part of a team to analyze the Northeast Regional
-            Epilepsy Group. The project examined cross-functional teamwork,
-            organizational values, communication strategies, and opportunities
-            for organizational improvement.
-
+            Worked as part of a team to analyze the Northeast Regional Epilepsy Group.
+            The project examined cross-functional teamwork, organizational values,
+            communication strategies, and opportunities for organizational improvement.
           </p>
 
-
           <span class="tag">
-
             Business Analysis
-
           </span>
 
-
           <span class="tag">
-
             Teamwork
-
           </span>
 
-
           <span class="tag">
-
             Communication
-
           </span>
-
 
           <span class="tag">
-
             Presentation
-
           </span>
-
 
           <br>
 
-
-          <!-- POWERPOINT LINK -->
-
           <a
             class="project-link"
-            href="Northeast-Regional-Epilepsy-Group-Analysis.pptx"
+            href="Northeast-Regional-Epilepsy-Group-Analysis.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
-
             View Project →
-
           </a>
-
 
         </div>
 
 
 
-
-        <!-- ================================= -->
-        <!-- PROJECT 2                         -->
-        <!-- ================================= -->
+        <!-- PROJECT 2 -->
 
         <div class="project">
 
-
           <h3>
-
             Supply Chain & Procurement Analysis
-
           </h3>
 
-
           <p>
-
             Applied sourcing, supplier selection, negotiation, purchasing,
             inventory management, and supply management concepts to business
             cases through Rutgers Supply Chain Management coursework.
-
           </p>
 
-
           <span class="tag">
-
             Procurement
-
           </span>
 
-
           <span class="tag">
-
             Strategic Sourcing
-
           </span>
 
-
           <span class="tag">
-
             Supply Chain
-
           </span>
 
-
           <span class="tag">
-
             Supplier Management
-
           </span>
-
 
           <span class="tag">
-
             Negotiation
-
           </span>
-
 
         </div>
 
 
 
-
-        <!-- ================================= -->
-        <!-- PROJECT 3                         -->
-        <!-- ================================= -->
+        <!-- PROJECT 3 -->
 
         <div class="project">
 
-
           <h3>
-
             Goldman Sachs Internal Audit Simulation
-
           </h3>
 
-
           <p>
-
             Completed the Goldman Sachs Internal Audit virtual job simulation,
             examining business processes, risk identification,
             anti-money-laundering controls, and opportunities for improving
             internal controls.
-
           </p>
 
-
           <span class="tag">
-
             Risk Analysis
-
           </span>
 
-
           <span class="tag">
-
             Internal Audit
-
           </span>
 
-
           <span class="tag">
-
             Problem Solving
-
           </span>
-
 
           <span class="tag">
-
             Business Analysis
-
           </span>
-
 
           <br>
-
-
-          <!-- FORAGE LINK -->
 
           <a
             class="project-link"
@@ -1054,18 +551,13 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-
             View Forage →
-
           </a>
-
 
         </div>
 
 
-
       </div>
-
 
     </section>
 
@@ -1074,13 +566,9 @@
 
 
 
-
-  <!-- ================================= -->
-  <!-- FOOTER                            -->
-  <!-- ================================= -->
+  <!-- FOOTER -->
 
   <footer>
-
 
     <p>
 
@@ -1088,34 +576,25 @@
 
       &nbsp; | &nbsp;
 
-
       <a
         href="https://github.com/RyanAzzara"
         target="_blank"
         rel="noopener noreferrer"
       >
-
         GitHub
-
       </a>
 
-
       &nbsp; | &nbsp;
-
 
       <a
         href="https://www.linkedin.com/in/ryan-azzara-69b6ba38a/"
         target="_blank"
         rel="noopener noreferrer"
       >
-
         LinkedIn
-
       </a>
 
-
     </p>
-
 
   </footer>
 
