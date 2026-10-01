@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,6 @@
   <title>Ryan Azzara | Portfolio</title>
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -31,6 +31,7 @@
       padding: 18px 0;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
 
     nav {
@@ -63,7 +64,7 @@
     }
 
     .hero {
-      min-height: 70vh;
+      min-height: 75vh;
       display: flex;
       align-items: center;
       background: linear-gradient(135deg, #e2e8f0, #ffffff);
@@ -71,26 +72,35 @@
 
     .hero-content {
       width: 90%;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
     }
 
-    .hero h1 {
-      font-size: 60px;
-      color: #0f172a;
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h3 {
+      color: #475569;
+      font-size: 20px;
       margin-bottom: 10px;
     }
 
-    .hero h3 {
-      color: #475569;
+    .hero-text h1 {
+      font-size: 60px;
+      color: #0f172a;
       margin-bottom: 15px;
     }
 
     .statement {
       font-size: 21px;
-      max-width: 800px;
-      margin-bottom: 25px;
+      max-width: 720px;
       color: #334155;
+      margin-bottom: 25px;
     }
 
     .button {
@@ -102,21 +112,36 @@
       border-radius: 8px;
       font-weight: bold;
       margin-right: 10px;
+      margin-top: 8px;
     }
 
     .button:hover {
       background-color: #334155;
     }
 
+    .hero-photo {
+      flex-shrink: 0;
+    }
+
+    .hero-photo img {
+      width: 330px;
+      height: 410px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.20);
+      border: 4px solid white;
+    }
+
     section {
       width: 90%;
       max-width: 1100px;
       margin: auto;
-      padding: 65px 0;
+      padding: 70px 0;
     }
 
     section h2 {
-      font-size: 32px;
+      font-size: 34px;
       color: #0f172a;
       margin-bottom: 10px;
     }
@@ -124,6 +149,7 @@
     .section-description {
       color: #64748b;
       margin-bottom: 25px;
+      max-width: 750px;
     }
 
     .skills-grid {
@@ -139,6 +165,7 @@
       border: 1px solid #e2e8f0;
       text-align: center;
       font-weight: bold;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
     }
 
     .projects-grid {
@@ -152,6 +179,7 @@
       padding: 25px;
       border-radius: 12px;
       border: 1px solid #e2e8f0;
+      box-shadow: 0 5px 16px rgba(15, 23, 42, 0.06);
     }
 
     .project h3 {
@@ -174,6 +202,18 @@
       margin: 3px;
     }
 
+    .project-link {
+      display: inline-block;
+      margin-top: 14px;
+      color: #0f172a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background-color: #0f172a;
       color: white;
@@ -186,31 +226,42 @@
       color: white;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 800px) {
+      .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .hero-text h1 {
+        font-size: 44px;
+      }
+
+      .statement {
+        font-size: 18px;
+      }
+
+      .hero-photo img {
+        width: 250px;
+        height: 310px;
+      }
 
       nav {
         flex-direction: column;
         gap: 12px;
       }
 
-      .hero h1 {
-        font-size: 42px;
-      }
-
-      .statement {
-        font-size: 18px;
+      nav ul {
+        gap: 16px;
       }
     }
-
   </style>
 </head>
 
 <body>
 
   <header>
-
     <nav>
-
       <h2>Ryan Azzara</h2>
 
       <ul>
@@ -218,41 +269,45 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
-
     </nav>
-
   </header>
-
 
   <main>
 
-    <!-- PERSONAL STATEMENT -->
+    <!-- ABOUT / PERSONAL STATEMENT -->
 
     <section class="hero" id="about">
 
       <div class="hero-content">
 
-        <h3>Supply Chain Management Student</h3>
+        <div class="hero-text">
 
-        <h1>Ryan Azzara</h1>
+          <h3>Supply Chain Management Student</h3>
 
-        <p class="statement">
-          I am a Rutgers Business School Supply Chain Management student
-          interested in procurement, sourcing, logistics, supplier management,
-          and using data to improve business operations.
-        </p>
+          <h1>Ryan Azzara</h1>
 
-        <a class="button" href="#projects">
-          View My Projects
-        </a>
+          <p class="statement">
+            I am a Rutgers Business School Supply Chain Management student
+            interested in procurement, sourcing, logistics, supplier management,
+            and using data to improve business operations.
+          </p>
 
-        <a class="button"
-           href="https://github.com/RyanAzzara"
-           target="_blank">
+          <a class="button" href="#projects">
+            View My Projects
+          </a>
 
-          GitHub Profile
+          <a class="button"
+             href="https://github.com/RyanAzzara"
+             target="_blank">
+            GitHub Profile
+          </a>
 
-        </a>
+        </div>
+
+        <div class="hero-photo">
+          <img src="Headshot.png"
+               alt="Ryan Azzara professional headshot">
+        </div>
 
       </div>
 
@@ -303,8 +358,8 @@
       <h2>Projects</h2>
 
       <p class="section-description">
-        Selected projects that demonstrate my business, analytical,
-        and technical skills.
+        Selected academic and professional projects that demonstrate my business,
+        analytical, and technical skills.
       </p>
 
       <div class="projects-grid">
@@ -317,15 +372,13 @@
           <h3>Northeast Regional Epilepsy Group Analysis</h3>
 
           <p>
-            Completed an internal business analysis project focused on
-            evaluating organizational challenges and developing recommendations
-            using management and business concepts.
+            Completed an internal business analysis project focused on evaluating
+            organizational challenges and developing recommendations using
+            management and business concepts.
           </p>
 
           <span class="tag">Business Analysis</span>
-
           <span class="tag">Teamwork</span>
-
           <span class="tag">Presentation</span>
 
         </div>
@@ -339,14 +392,12 @@
 
           <p>
             Applied sourcing, supplier selection, negotiation, purchasing,
-            inventory, and supply management concepts to business cases
-            through Rutgers Supply Chain Management coursework.
+            inventory, and supply management concepts to business cases through
+            Rutgers Supply Chain Management coursework.
           </p>
 
           <span class="tag">Procurement</span>
-
           <span class="tag">Sourcing</span>
-
           <span class="tag">Supply Chain</span>
 
         </div>
@@ -360,25 +411,23 @@
 
           <p>
             Completed a virtual job simulation involving internal audit,
-            risk identification, anti-money-laundering controls, and
-            evaluating business processes.
+            risk identification, anti-money-laundering controls, and evaluating
+            business processes.
           </p>
 
           <span class="tag">Risk Analysis</span>
-
           <span class="tag">Internal Audit</span>
-
           <span class="tag">Problem Solving</span>
 
-          <p>
-            <a href="https://www.theforage.com/"
-               target="_blank">
-               View Forage
-            </a>
-          </p>
+          <br>
+
+          <a class="project-link"
+             href="https://www.theforage.com/"
+             target="_blank">
+            View Forage
+          </a>
 
         </div>
-
 
       </div>
 
@@ -393,12 +442,12 @@
       © 2026 Ryan Azzara |
       <a href="https://github.com/RyanAzzara"
          target="_blank">
-         GitHub
+        GitHub
       </a>
     </p>
 
   </footer>
 
-
 </body>
+
 </html>
